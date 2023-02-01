@@ -1,23 +1,28 @@
 :root {
-  --main-color: #11080b;
+  --main-color: #4b4366;
   --sidebar-color: #f4fbf4;
   --main-accent-color: #cc3953;
   --accent-color: #517380;
   --active-link-color: #960f28;
 }
+
 body {
   font-family: "Montserrat Alternates", sans-serif;
   background-color: #f5f7fa;
   padding: 40px;
   font-size: 14px;
   line-height: calc(24 / 14);
+  margin: 0;
+  width: 100%;
 }
+
 .frame {
   display: flex;
   flex-direction: row-reverse;
   width: 1200px;
   margin: auto;
 }
+
 .main {
   background-color: #fff;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
@@ -25,30 +30,68 @@ body {
   padding: 100px 90px;
   text-align: justify;
 }
-h2 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b {
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: calc(17 / 14);
-  margin-top: 0;
-  margin-bottom: 20px;
 }
+
 h1 {
-  font-style: normal;
-  font-weight: 700;
   font-size: 45px;
   line-height: calc(55 / 45);
   margin-bottom: 25px;
 }
-h5 {
-  margin-top: 35px;
-  margin-bottom: 10px;
-  font-style: normal;
-  font-weight: 700;
+
+h2 {
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  margin-bottom: 20px;
+}
+
+h3 {
   font-size: 22px;
   line-height: calc(27 / 22);
+  margin-bottom: 5px;
 }
+
+h4 {
+  font-size: 22px;
+  line-height: calc(27 / 22);
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 22px;
+  line-height: calc(27 / 22);
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  margin-top: 21.28px;
+  margin-bottom: 5px;
+}
+
+ul,
+ol {
+  margin: 0 0 0 17px;
+  padding: 0;
+}
+
 a {
+  cursor: pointer;
   text-decoration: none;
   color: inherit;
 }
@@ -56,6 +99,7 @@ a:hover,
 a:focus {
   color: var(--active-link-color);
 }
+
 ol a {
   color: var(--main-accent-color);
 }
@@ -63,29 +107,21 @@ ol a:hover,
 ol a:focus {
   color: var(--accent-color);
 }
-ol,
-ul {
-  padding: 0;
-  margin-left: 17px;
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-h4 {
-  margin-top: 35px;
-  margin-bottom: 10px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: calc(27 / 22);
+
+aside {
+  background-color: var(--main-color);
+  width: max-content;
+  color: var(--sidebar-color);
+  padding-top: 40px;
 }
-h6 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  margin-top: 21.28px;
-  margin-bottom: 5px;
-}
+
 .exp-place {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -93,8 +129,8 @@ h6 {
   margin-top: 0;
   margin-bottom: 5px;
 }
+
 .exp-period {
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(15 / 12);
@@ -102,8 +138,8 @@ h6 {
   margin-top: 0;
   margin-bottom: 3px;
 }
+
 .edu-place {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -111,15 +147,15 @@ h6 {
   margin-top: 21.28px;
   margin-bottom: 5px;
 }
+
 .edu-faculty {
-  font-style: normal;
   font-weight: 700;
   line-height: calc(20 / 16);
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
 .edu-period {
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(15 / 12);
@@ -127,16 +163,16 @@ h6 {
   margin-top: 5px;
   margin-bottom: 3px;
 }
+
 .add-edu-course {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(20 / 16);
   margin-top: 21.28px;
   margin-bottom: 5px;
 }
+
 .add-edu-place {
-  font-style: normal;
   font-weight: 700;
   line-height: calc(20 / 16);
   color: var(--main-accent-color);
@@ -145,22 +181,10 @@ h6 {
 }
 
 /*--------------------SIDEBAR--------------------*/
-aside {
-  background-color: var(--main-color);
-  width: 370px;
-  color: var(--sidebar-color);
-  padding-top: 40px;
-}
 .sidebar {
   padding: 50px 40px;
 }
-h3 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: calc(27 / 22);
-  margin-bottom: 5px;
-}
+
 .sidebar a {
   color: var(--accent-color);
 }
@@ -168,9 +192,11 @@ h3 {
 .sidebar a:focus {
   color: var(--sidebar-color);
 }
-.sidebar ul li {
+
+.sidebar li {
   color: var(--main-accent-color);
 }
-.sidebar ul li span {
+
+.sidebar span {
   color: var(--sidebar-color);
 }

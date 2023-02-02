@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -24,45 +24,131 @@
   <body>
     <!--Frame-->
     <div class="frame">
+      <!--Sidebar-->
+      <aside>
+        <img src="./img/photo.jpg" alt="User photo" width="370" />
+        <div class="sidebar">
+          <!--Contacts-->
+          <section>
+            <h3>Contacts</h3>
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <svg class="icon" width="20" height="20">
+                  <use href="./img/icons/phone.svg"></use>
+                </svg>
+                <a href="tel:+380972565800">+38 097 25 65 800</a>
+              </li>
+              <li class="contacts-item">
+                <svg class="icon" width="20" height="20">
+                  <use href="./img/icons/email.svg"></use>
+                </svg>
+                <a href="mailto:lethargium@gmail.com">lethargium@gmail.com</a>
+              </li>
+              <li class="contacts-item social">
+                <a
+                  class="contact-link"
+                  href="https://github.com/Hi-tei-hi-me"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  ><svg class="icon" width="20" height="20">
+                    <use href="./img/icons/github.svg"></use>
+                  </svg>
+                </a>
+                <a
+                  class="contact-link"
+                  href="https://www.linkedin.com/in/hiteihime"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  ><svg class="icon" width="20" height="20">
+                    <use href="./img/icons/linkedin.svg"></use>
+                  </svg>
+                </a>
+                <a class="contact-link" href="https://djinni.co" target="_blank" rel="noopener nofollow noreferrer"
+                  ><svg class="icon" width="20" height="20">
+                    <use href="./img/icons/djinni.svg"></use>
+                  </svg>
+                </a>
+                <a
+                  class="contact-link"
+                  href="https://www.facebook.com/Hiteihime"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  ><svg class="icon" width="20" height="20">
+                    <use href="./img/icons/facebook.svg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <!--Tech skills-->
+          <section>
+            <h3>Tech skills</h3>
+            <ul class="techSkills-list">
+              <li class="techSkills-item">HTML5</li>
+              <li class="techSkills-item">CSS3/SASS</li>
+              <li class="techSkills-item">Responsive/Adaptive design</li>
+              <li class="techSkills-item">JavaScript</li>
+              <li class="techSkills-item">React</li>
+              <li class="techSkills-item">Redux</li>
+              <li class="techSkills-item">Node.js</li>
+              <li class="techSkills-item">GIT/GitHub</li>
+              <li class="techSkills-item">VS Code</li>
+              <li class="techSkills-item">Trello</li>
+            </ul>
+          </section>
+          <!--Soft skills-->
+          <section>
+            <h3>Soft skills</h3>
+            <ul class="softSkills-list">
+              <li class="softSkills-item">honesty</li>
+              <li class="softSkills-item">perfectionism</li>
+              <li class="softSkills-item">responsibility</li>
+              <li class="softSkills-item">open minded person</li>
+              <li class="softSkills-item">team player</li>
+            </ul>
+          </section>
+          <!--Add info-->
+          <section>
+            <h3>Additional information</h3>
+            <span> Languages:</span>
+            <ul class="lang-list">
+              <li class="lang">Ukrainian (native)</li>
+              <li class="lang">Russian (native)</li>
+              <li class="lang">English (upper-intermediate)</li>
+              <li class="lang">German (intermediate)</li>
+            </ul>
+          </section>
+        </div>
+      </aside>
       <!--Main block-->
       <div class="main">
         <!--Intro-->
         <section>
-          <h2>Import Manager</h2>
+          <h2>Junior Front-End Developer</h2>
           <h1>Halyna Humeniuk</h1>
-          <p>
-            8 years of work in the field of foreign economic activity, including organization and control of the
-            products' import from different countries (Europe, Asia) at all stages, documentary support of import and
-            export operations, work with suppliers, customs brokers, forwarders (sea, rail and air transport), insurance
-            and inspection companies, control of mutual settlements with contractors, development and implementation of
-            supply schemes without actual importation into the territory of Ukraine, documentary support of the product
-            samples transfer for participation at international exhibitions.
+          <p class="summary">
+            Not much experienced but very enthusiastic switcher knowing something in HTML, CSS, JavaScript, React,
+            Node.js and wanting to find perspective job at some cool company to do really great and meaningful stuff.
           </p>
         </section>
         <!--Projects-->
         <section>
-          <h5>Projects</h5>
-          <ol>
-            <li>
-              <span
-                ><a href="https://hi-tei-hi-me.github.io/cv/" target="_blank" rel="noopener nofollow noreferrer"
-                  ><span>CV web-page</span>
-                </a>
-                _ _ _ _ <span>[</span>my work experience<span>]</span></span
-              >
-            </li>
-            <li>
-              <span
-                ><a
-                  href="https://www.instagram.com/hitei.hime_inblack"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  ><span>Instagram</span>
-                </a>
-                _ _ _ _ _ _ <span>[</span>black and white melancholy<span>]</span></span
-              >
+          <h5>Personal projects</h5>
+          <ol class="projects-list">
+            <li class="project-item">
+              <a
+                class="project-link"
+                href="https://hi-tei-hi-me.github.io/goit-markup-hw-08"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >WebStudio
+              </a>
+              [HTML, CSS (including preprocessor Sass)]
+              <p class="project-summary">A landing page with a responsive layout for a creative studio.</p>
             </li>
           </ol>
+          <h5>Team projects</h5>
+          <ol class="projects-list"></ol>
         </section>
         <!--Experience-->
         <section>
@@ -206,81 +292,6 @@
           </div>
         </section>
       </div>
-      <!--Sidebar-->
-      <aside>
-        <img src="./img/photo.jpg" alt="User photo" width="370" />
-        <div class="sidebar">
-          <!--Contacts-->
-          <section>
-            <h3>Contacts</h3>
-            <ul style="list-style-type: none; margin-left: 0">
-              <li>
-                <span><b>Phone no.:</b></span>
-                <a href="tel:+380972565800">+38 097 25 65 800</a>
-              </li>
-              <li>
-                <span><b>E-mail:</b></span>
-                <a href="mailto:lethargium@gmail.com">lethargium@gmail.com</a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/hitei.hime" target="_blank" rel="noopener nofollow noreferrer"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a href="https://www.facebook.com/Hiteihime" target="_blank" rel="noopener nofollow noreferrer"
-                  >Facebook</a
-                >
-              </li>
-            </ul>
-          </section>
-          <!--Tech skills-->
-          <section>
-            <h3>Tech skills</h3>
-            <ul>
-              <li><span>MS Office Word</span></li>
-              <li><span>MS Office Excel</span></li>
-              <li><span>1C: Enterprise</span></li>
-              <li><span>MD Office</span></li>
-              <li><span>HTML5</span></li>
-              <li><span>CSS</span></li>
-              <li><span>GitHub</span></li>
-              <li><span>Visual Studio Code</span></li>
-              <li><span>Slack</span></li>
-              <li><span>Figma</span></li>
-            </ul>
-          </section>
-          <!--Soft skills-->
-          <section>
-            <h3>Soft skills</h3>
-            <ul>
-              <li><span>perfectionism</span></li>
-              <li><span>honesty</span></li>
-              <li><span>self-organization and responsibility</span></li>
-              <li><span>ability and willingness to learn new things</span></li>
-              <li><span>courtesy, optimism and goodwill</span></li>
-              <li><span>teamwork</span></li>
-            </ul>
-          </section>
-          <!--Add info-->
-          <section>
-            <h3>Additional information</h3>
-            <ul>
-              <li>
-                <span> Languages:</span>
-                <ul>
-                  <li><span>Ukrainian (native)</span></li>
-                  <li><span>Russian (native)</span></li>
-                  <li><span>English (upper-intermediate)</span></li>
-                  <li><span>German (upper-intermediate)</span></li>
-                  <li><span>Japanese (beginner)</span></li>
-                </ul>
-              </li>
-              <li><span>Driver license (category B, B1)</span></li>
-            </ul>
-          </section>
-        </div>
-      </aside>
     </div>
   </body>
 </html>

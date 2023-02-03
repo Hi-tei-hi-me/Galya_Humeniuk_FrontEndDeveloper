@@ -2,8 +2,8 @@
   --main-color: #4b4366;
   --sidebar-color: #f4fbf4;
   --accent-color: #ce2141;
-  --sidebar-accent-color: #5da9c7;
-  --main-accent-color: #153d4e;
+  --sidebar-accent-color: #6f9aaa;
+  --main-accent-color: #2a576a;
   --active-link-color: #871228;
 }
 
@@ -18,10 +18,11 @@ body {
 }
 
 aside {
-  background-color: var(--main-color);
+  padding-top: 40px;
   width: max-content;
   color: var(--sidebar-color);
-  padding-top: 40px;
+  background-color: var(--main-color);
+  flex-shrink: 0;
 }
 
 h1,
@@ -114,36 +115,49 @@ img {
   margin-bottom: 15px;
 }
 
-.contacts-item {
+.contact-item {
   display: flex;
   align-items: center;
   gap: 8px;
   color: var(--sidebar-accent-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-item:hover,
-.contacts-item:focus {
+.contact-item:hover,
+.contact-item:focus {
   color: var(--sidebar-color);
 }
 
-.icon {
-  outline: 2px solid yellowgreen;
-  fill: white;
-  background: #000;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.contact-icon {
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  fill: var(--sidebar-color);
 }
 
 .social {
+  align-items: center;
   justify-content: space-evenly;
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  fill: var(--sidebar-accent-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-link:hover svg,
+.contact-link:focus svg {
+  fill: var(--sidebar-color);
 }
 
 .techSkills-list {

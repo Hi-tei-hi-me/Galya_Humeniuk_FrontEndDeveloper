@@ -214,6 +214,9 @@ img {
 .project-item {
   margin-left: 17px;
 }
+.project-item:not(:last-child) {
+  margin-bottom: 10px;
+}
 
 .project-link {
   font-weight: 700;

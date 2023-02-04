@@ -2,9 +2,9 @@
   --main-color: #4b4366;
   --sidebar-color: #f4fbf4;
   --accent-color: #ce2141;
-  --sidebar-accent-color: #6f9aaa;
   --main-accent-color: #2a576a;
   --active-link-color: #871228;
+  --sidebar-link-color: #c4475f;
 }
 
 body {
@@ -124,11 +124,6 @@ img {
   align-items: center;
   gap: 8px;
   color: var(--sidebar-color);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-item:hover,
-.contact-item:focus {
-  color: var(--sidebar-accent-color);
 }
 
 .contact-icon {
@@ -138,12 +133,21 @@ img {
   fill: var(--sidebar-color);
 }
 
+.contact-link {
+  border-bottom: 2px dashed transparent;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-item:hover .contact-link,
+.contact-item:focus .contact-link {
+  border-bottom: 2px dashed var(--sidebar-link-color);
+}
+
 .social {
   align-items: center;
   justify-content: space-evenly;
 }
 
-.contact-link {
+.social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,6 +155,12 @@ img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  border-bottom: 2px dashed transparent;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link:hover,
+.social-link:focus {
+  border-bottom: 2px dashed var(--sidebar-link-color);
 }
 
 .social-icon {
@@ -159,9 +169,9 @@ img {
   fill: var(--sidebar-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-link:hover svg,
-.contact-link:focus svg {
-  fill: var(--sidebar-accent-color);
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--sidebar-link-color);
 }
 
 .techSkills-list {

@@ -89,6 +89,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:focus-visible {
+  outline: 2px solid var(--accent-color);
+  border-radius: 5px;
+}
 
 img {
   display: block;
@@ -119,12 +123,12 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--sidebar-accent-color);
+  color: var(--sidebar-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-item:hover,
 .contact-item:focus {
-  color: var(--sidebar-color);
+  color: var(--sidebar-accent-color);
 }
 
 .contact-icon {
@@ -152,12 +156,12 @@ img {
 .social-icon {
   width: 25px;
   height: 25px;
-  fill: var(--sidebar-accent-color);
+  fill: var(--sidebar-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover svg,
 .contact-link:focus svg {
-  fill: var(--sidebar-color);
+  fill: var(--sidebar-accent-color);
 }
 
 .techSkills-list {
@@ -220,6 +224,13 @@ img {
 
 .project-link {
   font-weight: 700;
+  border-bottom: 1px dashed currentColor;
+  color: inherit;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-link:hover,
+.project-link:focus {
+  color: var(--main-accent-color);
 }
 
 .project-summary {
@@ -237,6 +248,7 @@ img {
 }
 
 .place-link {
+  border-bottom: 1px dashed currentColor;
   color: inherit;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
